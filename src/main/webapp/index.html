@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<style>
+  table,tr,td{
+  color:red;
+  border-radius:10px;
+  }
+  
+  .form{
+  position:absolute;
+  top:100px;
+  left:10px;
+  
+  width:400px;
+  
+  margin-left:35%;
+  padding:20px;
+  
+  display:flex;
+   box-sizing:border-box;
+   border-radius:10px;
+   justify-content:center;
+  min-height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  input{
+  margin-top:10px;
+  margin-bottom: 10px;
+  }
+
+</style>
+<body>
+
+<!-            | table | -->
+<!-- 1.header ,2.body 3.footer -->
+<table border="1" style="border:1px dashed red;">
+<!-- |head -->
+<tr><th>S.no</th><th>Name</th><th>Age</th><th>Marks</th></tr>
+<!--  body -->
+<tr><td>1</td><td>core java</td><td>8</td><td>100</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td><td>100</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td><td>100</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td><td>100</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td><td>100</td></tr>
+
+</table>
+<!-            | table | -->
+<table border="1">
+<thead><td>Name</td><td>last Name</td> <td>Address</td></thead>
+<tbody>
+<tr><td>1</td><td>core java</td><td>8</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td></tr>
+<tr><td>1</td><td>core java</td><td>8</td></tr>
+</tbody>
+</table>
+<tfooter>
+<tr><td>total of ammount</td><td>100</td></tr>
+</tfooter>
+
+
+<h1> --------------------- form inputs--------------</h1>
+<form>
+
+<label>Enter the button</label>
+<input type="button" value="click me" /><br>
+<label>Enter the checkbox</label>
+<input type="checkbox" /><br>
+<label>Enter the color</label>
+<input type="color" /><br>
+<label>Enter the date</label>
+<input type="date" /><br>
+<label>Enter the datetime-local</label>
+<input type="datetime-local" /><br>
+<label>Enter the email</label>
+<input type="email" /><br>
+<label>Enter the file</label>
+<input type="file" /><br>
+<label>Enter the image</label>
+<input type="image" /><br>
+<label>Enter the month</label>
+<input type="month" /><br>
+<label>Enter the number</label>
+<input type="number" /><br>
+<label>Enter the password</label>
+<input type="password" /><br>
+<label>Enter the radio</label>
+<input type="radio" /><br>
+<label>Enter the range</label>
+<input type="range" /><br>
+<label>Enter the reset</label>
+<input type="reset" /><br>
+<label>Enter the search</label>
+<input type="search" /><br>
+<label>Enter the submit</label>
+<input type="submit" /><br>
+<label>Enter the tel</label>
+<input type="tel" /><br>
+<label>Enter the text</label>
+<input type="text" /><br>
+<label>Enter the time</label>
+<input type="time" /><br>
+<label>Enter the url</label>
+<input type="url" /><br>
+<label>Enter the week</label>
+<input type="week"><br>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="form">
+<form action="./manu">
+<h4>Login form</h4>
+<hr>
+<label>Enter the Email</label>
+<input type="email" placeholder="Enter the Emial">
+<br>
+<label>Enter the password</label>
+<input type="password" placeholder="Enter the Emial">
+<br>
+<input type="checkbox" value="remember to login">
+<br>
+<input type="submit" value="Login">
+<input type="reset" value="reset">
+</form>
+</div>
+
+
+<h1>------------------- bootstrap</h1>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+
+<div class="card mt-2 p-4" style="width: 18rem;">
+  <img src="./Images/baner2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<button id="manu" onclick="manu()">clik me</button>
+
+<script>
+function manu(){
+alert("hello button");
+</script>
+</body>
+</html>
